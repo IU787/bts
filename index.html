@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.box{
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			background-image: url(bg.gif);
+		}
+		.text{
+			text-align: center;
+		}
+		.img{
+			width: 600px;
+			border-radius: 50%;
+
+		}
+		.display{
+			display: flex;
+		}
+		.box1{
+			height: 25px;
+			padding-top: 10px;
+			margin-left: 15%;
+			background-color: #faf6a2;
+			border-radius: 30%;
+		}
+		.box2{
+			height: 25px;
+			padding-top: 10px;
+			margin-left: 15%;
+			border-radius: 30%;
+			background-color: #facba5 ;
+		}
+		.box3{
+			height: 25px;
+			padding-top: 15px;
+			margin-left: 10%;
+			border-radius: 30%;
+			background-color:#faa5a5 ;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1 class="text">Когда родился Чонгук?</h1>
+		<img src="jk.jpg" class="img">
+		<div class="display">
+		<div class="box1">01.02.1996</div>
+		<div class="box2">01.09.1997</div>
+		<div class="box3">06.10.1997</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		document.querySelector(".box1").onclick = function(){alert("Wrong");
+
+		document.querySelector(".box2").onclick = function(){alert("Right");
+			document.querySelector(".text").innerHTML = "Какой рост Тэхена?";
+			document.querySelector(".img").src = "tae.jpg";
+			document.querySelector(".box1").innerHTML = "179cm";
+			document.querySelector(".box2").innerHTML = "185cm";
+			document.querySelector(".box3").innerHTML = "174cm";
+
+		document.querySelector(".box2").onclick = function(){alert("Wrong");}
+
+		document.querySelector(".box1").onclick = function(){alert("Right");
+			document.querySelector(".text").innerHTML = "Где родился Чимин?";
+			document.querySelector(".img").src = "jm.jpg";
+			document.querySelector(".box1").innerHTML = "Сеул";
+			document.querySelector(".box2").innerHTML = "Пусан";
+			document.querySelector(".box3").innerHTML = "Чеджудо";
+		document.querySelector(".box1").onclick = function(){alert("Wrong");}
+
+		document.querySelector(".box2").onclick = function(){alert("Right");
+			document.querySelector(".text").innerHTML = "Тест завершен";
+			document.querySelector(".img").src = "1.gif";
+			document.querySelector(".display").style.display = "none";
+		}}}}
+
+		document.querySelector(".box3").onclick = function(){alert("Wrong");}
+		
+	
+	</script>
+</body>
+</html>
